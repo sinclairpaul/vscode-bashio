@@ -1,0 +1,13 @@
+[
+    {
+        "method": "log",
+        "submethods": [
+            "info()",
+            "debug()"
+        ]
+    },
+    {
+        "method": "api",
+        "submethods": "test23()"
+    }
+]

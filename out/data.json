@@ -8,6 +8,9 @@
     },
     {
         "method": "api",
-        "submethods": "test23()"
+        "submethods": [
+            "test23()",
+            "test34()"
+        ]
     }
 ]

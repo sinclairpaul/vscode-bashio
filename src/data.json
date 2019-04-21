@@ -3,14 +3,109 @@
 		  "method": "log",
 		  "submethods":	[
 			"info()",
-			"debug()"
+			"debug()",
+			"red()",
+			"green()",
+			"yellow()",
+			"blue()",
+			"magenta()",
+			"cyan()",
+			"log()",
+			"trace()",
+			"notice()",
+			"warning()",
+			"error()",
+			"fatal()"
 		]
 	},
 	{
 		  "method": "api",
 		  "submethods": [
-				"test23()",
-				"test34()"
+				"hassio()"
 			]
+	},
+	{
+		"method": "cache",
+		"submethods": [
+			"exists()",
+			"get()",
+			"set()",
+			"flush()",
+			"flush_all()"
+		]
+	},
+	{
+		"method": "color",
+		"submethods": [
+			"reset()",
+			"default()",
+			"black()",
+			"red()",
+			"green()",
+			"yellow()",
+			"blue()",
+			"magenta()",
+			"cyan()",
+			"bg.default()",
+			"bg.black()",
+			"bg.red()",
+			"bg.green()",
+			"bg.yellow()",
+			"bg.blue()",
+			"bg.magenta()",
+			"bg.cyan()",
+			"bg.white()"
+		]
+	},
+	{
+		"method": "config",
+		"submethods": [
+			"exists()",
+			"has_value()",
+			"is_empty()",
+			"equals()",
+			"true()",
+			"false()",
+			"is_safe_password()",
+			"require()",
+			"suggest()",
+			"suggest.true()",
+			"suggest.false()",
+			"require.username()",
+			"suggest.username()",
+			"require.password()",
+			"suggest.password()",
+			"require.safe_password()",
+			"suggest.safe_password()",
+			"require.ssl()"
+		]
+	},
+	{
+		"method": "exit",
+		"submethods": [
+			"nok()",
+			"die_if_false()",
+			"die_if_true()",
+			"die_if_empty()",
+			"ok()"
+		]
+	},
+	{
+		"method": "fs",
+		"submethods": [
+			"directory_exists()",
+			"file_exists()",
+			"device_exists()",
+			"socket_exists()"
+		]
+	},
+	{
+		"method": "hardware",
+		"submethods": [
+			"serial()",
+			"input()",
+			"disk()",
+			"gpio()"
+		]
 	}
   ]

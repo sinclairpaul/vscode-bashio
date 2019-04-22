@@ -17,7 +17,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"*"
+		"onLanguage:shellscript"
 	],
 	"main": "./out/extension.js",
 	"scripts": {

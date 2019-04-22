@@ -9,7 +9,7 @@ const topmethods = data.map(m => {
 
 export function activate(context: vscode.ExtensionContext) {
 
-	let bashioprov = vscode.languages.registerCompletionItemProvider('plaintext', {
+	let bashioprov = vscode.languages.registerCompletionItemProvider('shellscript', {
 
 		provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext) {
 
@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	
 	const firstlevel = vscode.languages.registerCompletionItemProvider(
-		'plaintext',
+		'shellscript',
 		{
 			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
 
@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 
 	const secondlevel = vscode.languages.registerCompletionItemProvider(
-		'plaintext',
+		'shellscript',
 		{
 			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
 		

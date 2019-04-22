@@ -1,111 +1,343 @@
 [
-	{
-		  "method": "log",
-		  "submethods":	[
-			"info()",
-			"debug()",
-			"red()",
-			"green()",
-			"yellow()",
-			"blue()",
-			"magenta()",
-			"cyan()",
-			"log()",
-			"trace()",
-			"notice()",
-			"warning()",
-			"error()",
-			"fatal()"
-		]
-	},
-	{
-		  "method": "api",
-		  "submethods": [
-				"hassio()"
-			]
-	},
-	{
-		"method": "cache",
-		"submethods": [
-			"exists()",
-			"get()",
-			"set()",
-			"flush()",
-			"flush_all()"
-		]
-	},
-	{
-		"method": "color",
-		"submethods": [
-			"reset()",
-			"default()",
-			"black()",
-			"red()",
-			"green()",
-			"yellow()",
-			"blue()",
-			"magenta()",
-			"cyan()",
-			"bg.default()",
-			"bg.black()",
-			"bg.red()",
-			"bg.green()",
-			"bg.yellow()",
-			"bg.blue()",
-			"bg.magenta()",
-			"bg.cyan()",
-			"bg.white()"
-		]
-	},
-	{
-		"method": "config",
-		"submethods": [
-			"exists()",
-			"has_value()",
-			"is_empty()",
-			"equals()",
-			"true()",
-			"false()",
-			"is_safe_password()",
-			"require()",
-			"suggest()",
-			"suggest.true()",
-			"suggest.false()",
-			"require.username()",
-			"suggest.username()",
-			"require.password()",
-			"suggest.password()",
-			"require.safe_password()",
-			"suggest.safe_password()",
-			"require.ssl()"
-		]
-	},
-	{
-		"method": "exit",
-		"submethods": [
-			"nok()",
-			"die_if_false()",
-			"die_if_true()",
-			"die_if_empty()",
-			"ok()"
-		]
-	},
-	{
-		"method": "fs",
-		"submethods": [
-			"directory_exists()",
-			"file_exists()",
-			"device_exists()",
-			"socket_exists()"
-		]
-	},
-	{
-		"method": "hardware",
-		"submethods": [
-			"serial()",
-			"input()",
-			"disk()",
-			"gpio()"
-		]
-	}
-  ]
+    {
+        "method":  "addons",
+        "submethods":  [
+                           "reload()",
+                           "start()",
+                           "restart()",
+                           "stop()",
+                           "install()",
+                           "rebuild()",
+                           "uninstall()",
+                           "update()",
+                           "log()",
+                           "changelog()",
+                           "installed()",
+                           "name()",
+                           "description()",
+                           "long_description()",
+                           "auto_update()",
+                           "url()",
+                           "detached()",
+                           "available()",
+                           "arch()",
+                           "machine()",
+                           "repository()",
+                           "version()",
+                           "last_version()",
+                           "update_available()",
+                           "state()",
+                           "boot()",
+                           "build()",
+                           "options()",
+                           "network()",
+                           "network_description()",
+                           "port()",
+                           "port_description()",
+                           "host_network()",
+                           "host_pid()",
+                           "host_ipc()",
+                           "host_dbus()",
+                           "privileged()",
+                           "apparmor()",
+                           "devices()",
+                           "auto_uart()",
+                           "icon()",
+                           "logo()",
+                           "changelog()",
+                           "hassio_api()",
+                           "hassio_role()",
+                           "homeassistant_api()",
+                           "auth_api()",
+                           "protected()",
+                           "rating()",
+                           "stdin()",
+                           "webui()",
+                           "gpio()",
+                           "kernel_modules()",
+                           "devicetree()",
+                           "docker_api()",
+                           "audio()",
+                           "audio_input()",
+                           "audio_output()",
+                           "ip_address()",
+                           "ingress()",
+                           "ingress_entry()",
+                           "ingress_url()",
+                           "ingress_port()",
+                           "stats()",
+                           "cpu_percent()",
+                           "memory_usage()",
+                           "memory_limit()",
+                           "network_tx()",
+                           "network_rx()",
+                           "blk_read()",
+                           "blk_write()",
+                           "protected()",
+                           "unprotected()"
+                       ]
+    },
+    {
+        "method":  "api",
+        "submethods":  [
+                           "hassio()"
+                       ]
+    },
+    {
+        "method":  "cache",
+        "submethods":  [
+                           "exists()",
+                           "get()",
+                           "set()",
+                           "flush()",
+                           "flush_all()"
+                       ]
+    },
+    {
+        "method":  "color",
+        "submethods":  [
+                           "reset()",
+                           "default()",
+                           "black()",
+                           "red()",
+                           "green()",
+                           "yellow()",
+                           "blue()",
+                           "magenta()",
+                           "cyan()",
+                           "bg.default()",
+                           "bg.black()",
+                           "bg.red()",
+                           "bg.green()",
+                           "bg.yellow()",
+                           "bg.blue()",
+                           "bg.magenta()",
+                           "bg.cyan()",
+                           "bg.white()"
+                       ]
+    },
+    {
+        "method":  "config",
+        "submethods":  [
+                           "exists()",
+                           "has_value()",
+                           "is_empty()",
+                           "equals()",
+                           "true()",
+                           "false()",
+                           "is_safe_password()",
+                           "require()",
+                           "suggest()",
+                           "suggest.true()",
+                           "suggest.false()",
+                           "require.username()",
+                           "suggest.username()",
+                           "require.password()",
+                           "suggest.password()",
+                           "require.safe_password()",
+                           "suggest.safe_password()",
+                           "require.ssl()"
+                       ]
+    },
+    {
+        "method":  "exit",
+        "submethods":  [
+                           "nok()",
+                           "die_if_false()",
+                           "ok()"
+                       ]
+    },
+    {
+        "method":  "fs",
+        "submethods":  [
+                           "directory_exists()",
+                           "file_exists()",
+                           "device_exists()",
+                           "socket_exists()"
+                       ]
+    },
+    {
+        "method":  "hardware",
+        "submethods":  [
+                           "serial()",
+                           "input()",
+                           "disk()",
+                           "gpio()"
+                       ]
+    },
+    {
+        "method":  "hassos",
+        "submethods":  [
+                           "update()",
+                           "update_cli()",
+                           "config_sync()",
+                           "version()",
+                           "version_latest()",
+                           "update_available()",
+                           "version_cli()",
+                           "version_cli_latest()",
+                           "update_available_cli()",
+                           "board()"
+                       ]
+    },
+    {
+        "method":  "homeassistant",
+        "submethods":  [
+                           "start()",
+                           "stop()",
+                           "restart()",
+                           "update()",
+                           "check()",
+                           "logs()",
+                           "version()",
+                           "last_version()",
+                           "update_available()",
+                           "arch()",
+                           "machine()",
+                           "image()",
+                           "custom()",
+                           "boot()",
+                           "port()",
+                           "ssl()",
+                           "watchdog()",
+                           "stats()",
+                           "cpu_percent()",
+                           "memory_usage()",
+                           "memory_limit()",
+                           "network_tx()",
+                           "network_rx()",
+                           "blk_read()",
+                           "blk_write()"
+                       ]
+    },
+    {
+        "method":  "host",
+        "submethods":  [
+                           "reload()",
+                           "shutdown()",
+                           "reboot()",
+                           "hostname()",
+                           "features()",
+                           "operating_system()",
+                           "kernel()",
+                           "chassis()",
+                           "deployment()",
+                           "cpe()"
+                       ]
+    },
+    {
+        "method":  "info",
+        "submethods":  [
+                           "supervisor()",
+                           "homeassistant()",
+                           "hassos()",
+                           "hostname()",
+                           "machine()",
+                           "arch()",
+                           "channel()",
+                           "supported_arch()"
+                       ]
+    },
+    {
+        "method":  "jq",
+        "submethods":  [
+                           "exists()",
+                           "has_value()",
+                           "is()",
+                           "is_boolean()",
+                           "is_string()",
+                           "is_object()",
+                           "is_number()",
+                           "is_array()"
+                       ]
+    },
+    {
+        "method":  "log",
+        "submethods":  [
+                           "red()",
+                           "green()",
+                           "yellow()",
+                           "blue()",
+                           "magenta()",
+                           "cyan()",
+                           "log()",
+                           "trace()",
+                           "debug()",
+                           "info()",
+                           "notice()",
+                           "warning()",
+                           "error()",
+                           "fatal()"
+                       ]
+    },
+    {
+        "method":  "net",
+        "submethods":  [
+                           "wait_for()"
+                       ]
+    },
+    {
+        "method":  "pwned",
+        "submethods":  [
+                           "is_safe_password()",
+                           "occurances()"
+                       ]
+    },
+    {
+        "method":  "repositories",
+        "submethods":  [
+                           "name()",
+                           "source()",
+                           "url()",
+                           "maintainer()"
+                       ]
+    },
+    {
+        "method":  "string",
+        "submethods":  [
+                           "lower()",
+                           "upper()",
+                           "replace()",
+                           "length()",
+                           "substring()"
+                       ]
+    },
+    {
+        "method":  "supervisor",
+        "submethods":  [
+                           "ping()",
+                           "update()",
+                           "reload()",
+                           "logs()",
+                           "version()",
+                           "last_version()",
+                           "update_available()",
+                           "arch()",
+                           "channel()",
+                           "timezone()",
+                           "wait_boot()",
+                           "addons()",
+                           "addons_repositories()",
+                           "stats()",
+                           "cpu_percent()",
+                           "memory_usage()",
+                           "memory_limit()",
+                           "network_tx()",
+                           "network_rx()",
+                           "blk_read()",
+                           "blk_write()"
+                       ]
+    },
+    {
+        "method":  "var",
+        "submethods":  [
+                           "true()",
+                           "false()",
+                           "defined()",
+                           "has_value()",
+                           "is_empty()",
+                           "equals()",
+                           "json()"
+                       ]
+    }
+]
